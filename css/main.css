@@ -1017,6 +1017,13 @@ figure .pin-copy {
   color: var(--color-text-a) !important;
 }
 
+article p,
+article ul,
+article ol {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+}
+
 /* light scheme */
 :root[color-mode="light"] {
   --bg-body: #FFFFFF;
@@ -2190,4 +2197,11 @@ a:hover {
 .markdown-body h5 .headerlink::before,
 .markdown-body h6 .headerlink::before {
   color: #fff;
+}
+@font-face {
+  font-family: 'FiraSans-Regular';
+  src: url("../fonts/FiraSans-Regular.ttf");
+}
+body {
+  font-family: 'FiraSans-Regular', sans-serif;
 }

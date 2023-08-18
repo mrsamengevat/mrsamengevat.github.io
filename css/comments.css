@@ -27,3 +27,10 @@
 .vcontent p {
   color: var(--color-text-a) !important;
 }
+
+article p,
+article ul,
+article ol {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+}

@@ -4,17 +4,48 @@
   
     
     <entry>
-      <title>第一篇文章</title>
-      <link href="/hello-world/"/>
-      <url>/hello-world/</url>
+      <title>测试文章1</title>
+      <link href="/%E6%B5%8B%E8%AF%95/"/>
+      <url>/%E6%B5%8B%E8%AF%95/</url>
       
-        <content type="html"><![CDATA[<p>我叫小苏</p>]]></content>
+        <content type="html"><![CDATA[<p>调试文章1</p>]]></content>
       
+      
+      <categories>
+          
+          <category> 类别测试实例1 </category>
+          
+      </categories>
       
       
         <tags>
             
-            <tag> 1 </tag>
+            <tag> 标签测试实例1 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>测试文章2</title>
+      <link href="/%E6%B5%8B%E8%AF%952/"/>
+      <url>/%E6%B5%8B%E8%AF%952/</url>
+      
+        <content type="html"><![CDATA[<p>调试文章2<br>a piece of writing on a particular subject written by an expert and usually published in a book or journal, or read aloud to other people</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 类别测试实例2 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签测试实例2 </tag>
             
         </tags>
       

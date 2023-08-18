@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="nl-NL" color-mode="light">
+<html lang="nl" color-mode="light">
 
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
-  <meta name="author" content="John Doe" />
+  <meta name="author" content="Asiel- en Migratierecht samengevat" />
   <meta name="description" content="" />
   
   
@@ -72,15 +72,15 @@
     <ul>
       
         <li class="nav-item" data-path="/">
-          <a href="/">Home</a>
+          <a href="/">Thuis</a>
         </li>
       
         <li class="nav-item" data-path="/archives/">
-          <a href="/archives/">Archives</a>
+          <a href="/archives/">Archief</a>
         </li>
       
         <li class="nav-item" data-path="/categories/">
-          <a href="/categories/">Categories</a>
+          <a href="/categories/">Categorieën</a>
         </li>
       
         <li class="nav-item" data-path="/tags/">
@@ -88,7 +88,7 @@
         </li>
       
         <li class="nav-item" data-path="/about/">
-          <a href="/about/">About</a>
+          <a href="/about/">Over</a>
         </li>
       
     </ul>
@@ -105,13 +105,26 @@
   <div class="post-list">
     <!-- 遍历渲染文章 -->
     
-      <div class="post-item" title="第一篇文章">
-        <div class="time-m-d">2023-08-16</div>
+      <div class="post-item" title="测试文章1">
+        <div class="time-m-d">2023-05-21</div>
         <div class="title">
-          <a href="/hello-world/">
+          <a href="/%E6%B5%8B%E8%AF%95/">
             
               
-                <span>第一篇文章</span>
+                <span>测试文章1</span>
+              
+            
+          </a>
+        </div>
+      </div>
+    
+      <div class="post-item" title="测试文章2">
+        <div class="time-m-d">2023-05-20</div>
+        <div class="title">
+          <a href="/%E6%B5%8B%E8%AF%952/">
+            
+              
+                <span>测试文章2</span>
               
             
           </a>
@@ -179,7 +192,7 @@
           </a>
         </span>
         
-          <input type="text" class="search-input" id="search-input" placeholder="Search...">
+          <input type="text" class="search-input" id="search-input" placeholder="Zoeken">
         
         <span class="search-close-icon" id="search-close-icon">
           <a href="javascript: void(0)">
@@ -231,7 +244,7 @@
       'use strict';
       var $input = document.getElementById(search_id);
       var $resultContent = document.getElementById(content_id);
-      $resultContent.innerHTML = "<ul><span class='local-search-empty'>First search, index file loading, please wait...<span></ul>";
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>Eerste zoekopdracht, laden indexbestand, gelieve later …<span></ul>";
       $.ajax({
         // 0x01. load xml file
         url: path,
@@ -327,7 +340,7 @@
             });
             str += "</ul>";
             if (str.indexOf('<li>') === -1) {
-              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>No result<span></ul>";
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>De inhoud is niet gevonden, probeer het zoekwoord te vervangen.<span></ul>";
             }
             $resultContent.innerHTML = str;
           });
