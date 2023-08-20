@@ -1771,15 +1771,6 @@ a:hover {
   white-space: nowrap;
 }
 
-.search-overlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-}
 
 .footer {
   padding-top: 30px;
@@ -2215,4 +2206,13 @@ a:hover {
 }
 body {
   font-family: 'FiraSans-Regular', sans-serif;
+}
+.blur {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.element {
+  --blur-filter: blur(10px);
+  backdrop-filter: var(--blur-filter); /* Safari 9+ */
+  -webkit-backdrop-filter: var(--blur-filter); /* Chrome & Safari 9+ */
 }
