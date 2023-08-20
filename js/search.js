@@ -136,15 +136,3 @@ var getSearchFile = function(){
     searchFunc(path, 'search-input', 'search-result');
 }
 
-.search-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0,0,0,0.3);
-  transition: background-color 0.2s ease;
-  visibility: visible;
-  padding-right: 6px;
-  backdrop-filter: blur(8px);
-}
